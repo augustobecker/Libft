@@ -1,4 +1,17 @@
 #include "libft.h"
+static int ft_isspace(char a)
+{
+	if ((a == '\n') 
+	    || (a == '\v') 
+	    || (a == '\f') 
+	    || (a == '\t') 
+	    || (a == '\r') 
+	    ||  (a == ' '))
+		return (1);
+  	else
+		return (0);
+}
+
 int ft_atoi(const char *str)
 {
 	int nbr;
@@ -6,8 +19,7 @@ int ft_atoi(const char *str)
 
 	nbr = 0;
 	sign = 1;
-	while (*str == '\n' || *str == '\v' || *str == '\f'
-	|| *str == '\t' || *str == '\r')
+	while (ft_isspace(*str))
 		str++;
 	if (*str == '-' || *str == '+')
 	{
