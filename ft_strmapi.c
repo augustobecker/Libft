@@ -5,7 +5,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char 			*str;
 
 	i = 0;
-	str = (char *)ft_calloc(strlen(s) + 1 * sizeof(char));
+	str = (char *)ft_calloc(strlen(s) + 1, sizeof(char));
 	if (str == NULL)
 	    return (NULL);
 	while (s[i])
