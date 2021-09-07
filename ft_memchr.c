@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/07 16:08:19 by acesar-l          #+#    #+#             */
+/*   Updated: 2021/09/07 16:08:21 by acesar-l         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-void *ft_memchr(const void *str, int argument, size_t size)
+void	*ft_memchr(const void *str, int argument, size_t size)
 {
 	const char	*s;
 	size_t		i;

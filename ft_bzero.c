@@ -1,12 +1,24 @@
-#include "libft.h"
-void ft_bzero(void *s, size_t length)
-{
-    size_t i;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/07 15:56:19 by acesar-l          #+#    #+#             */
+/*   Updated: 2021/09/07 15:56:22 by acesar-l         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    i = 0;
-    while (i < length)
-    {
-        ((char *)s)[i] = '\0';
-        i++;
-    }
+#include "libft.h"
+void	ft_bzero(void *s, size_t length)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < length)
+	{
+		((char *)s)[i] = '\0';
+		i++;
+	}
 }

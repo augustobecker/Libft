@@ -1,20 +1,30 @@
-#include "libft.h"
-char *ft_strrchr(const char *str, int argument)
-{
-	int 	length;
-	char 	*s;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/07 16:40:26 by acesar-l          #+#    #+#             */
+/*   Updated: 2021/09/07 17:07:38 by acesar-l         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-	length = strlen(str);
+#include "libft.h"
+char	*ft_strrchr(const char *str, int argument)
+{
+	int		length;
+	char	*s;
+
+	length = ft_strlen(str);
 	while (length)
 	{
 		if (*(str + length) == argument)
 		{
-		    s = (char *)&str[length];
+			s = (char *)&str[length];
 			return (s);
 		}
 		length--;
 	}
-	return (NULL);
+	return (0);
 }
-
-

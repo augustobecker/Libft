@@ -1,14 +1,27 @@
-#include "libft.h"
-void *ft_memset(void *s, int argument, size_t length)
-{
-    char      *str;
-    size_t    i;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/07 16:15:07 by acesar-l          #+#    #+#             */
+/*   Updated: 2021/09/07 17:04:22 by acesar-l         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    str = (char *)s;
-    while ( i < length)
-    {
-        str[i]= argument;
-        i++;
-    }
-    return (s);
+#include "libft.h"
+void	*ft_memset(void *s, int argument, size_t length)
+{
+	size_t	i;
+	char	*str;
+
+	i = 0;
+	str = (char *)s;
+	while (i < length)
+	{
+		str[i] = argument;
+		i++;
+	}
+	return (s);
 }
