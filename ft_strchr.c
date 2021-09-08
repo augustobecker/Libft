@@ -18,7 +18,7 @@ char	*ft_strchr(const char *str, int argument)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] == argument)
+		if (str[i] == (unsigned char)argument)
 		{
 			s = (char *) &str[i];
 			return (s);
