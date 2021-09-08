@@ -22,7 +22,7 @@ void	*ft_memchr(const void *str, int argument, size_t size)
 		return (NULL);
 	while (i < size)
 	{
-		if (*(s + i) == argument)
+		if (*(s + i) == (unsigned char)argument)
 			return ((void *)s + i);
 		i++;
 	}
