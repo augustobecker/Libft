@@ -25,5 +25,10 @@ char	*ft_strchr(const char *str, int argument)
 		}
 		i++;
 	}
+	if (str[i] == (unsigned char)argument)
+	{
+	    s = (char *) &str[i];
+	    return(s);
+	}
 	return (0);
 }
