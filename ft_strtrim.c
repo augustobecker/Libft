@@ -31,7 +31,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		while (s1[i + set_found + search] == set[search])
 		{
 			if (!set[search + 1])
+			{
 				set_found += ft_strlen(set);
+				search = 0;
+			}
 			++search;
 		}
 		str[i] = s1[i + set_found];
