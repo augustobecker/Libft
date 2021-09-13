@@ -13,17 +13,15 @@
 #include "libft.h"
 void	*ft_memchr(const void *str, int argument, size_t size)
 {
-	const char	*s;
+	unsigned char	*s;
 	size_t		i;
 
 	i = 0;
-	s = (const char *)str;
-	if (size == 0)
-		return (NULL);
+	s = (unsigned char *) str;
 	while (i < size)
 	{
-		if (*(s + i) == (unsigned char)argument)
-			return ((void *)s + i);
+		if (*(s + i) == (unsigned char) argument)
+			return ((void *) s + i);
 		i++;
 	}
 	return (NULL);
