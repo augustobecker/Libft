@@ -16,11 +16,11 @@ char	*ft_strrchr(const char *str, int argument)
 	int		length;
 
 	length = ft_strlen(str);
-	while (length)
+	while (length >= 0)
 	{
-		length--;
-		if (*(str + length) == (unsigned char)argument)
+		if ((unsigned char) str[length] == (unsigned char)argument)
 			return ((char *)&str[length]);
+		length--;
 	}
 	return (NULL);
 }
