@@ -13,22 +13,15 @@
 char	*ft_strchr(const char *str, int argument)
 {
 	int		i;
-	char	*s;
 
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] == (unsigned char)argument)
-		{
-			s = (char *) &str[i];
-			return (s);
-		}
+		if ((unsigned char) str[i] == (unsigned char)argument)
+			return ((char *) &str[i]);
 		i++;
 	}
-	if (str[i] == (unsigned char)argument)
-	{
-	    s = (char *) &str[i];
-	    return(s);
-	}
-	return (0);
+	if (argument == '\0')
+	    return ((char *) &str[i]);
+	return ((void *) 0);
 }
