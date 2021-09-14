@@ -15,20 +15,24 @@ static int ft_isunwanted(char c, char const *unwanted);
 
 char    *ft_strtrim(char const *s1, char const *set)
 {
-    int     begin;
-    int     final;
+    size_t     start;
+    size_t     final;
     char    *str;
 
-    begin = 0;
+    start = 0;
     final = ft_strlen(s1) - 1;
-    str = (char *)calloc(ft_strlen(s1) + 1, sizeof(char));
-    if (!str || !s1)
-        return (NULL);
-    while (ft_isunwanted(s1[begin], set))
-        begin++;
-    while (ft_isunwanted(s1[final], set))
+    while (ft_isunwanted(s1[start], set) && s1[start])
+        start++;
+    while (ft_isunwanted(s1[final], set) && final >= 0)
         final--;
-    ft_strlcpy(str, s1 + begin, final - begin + 1);
+    if (final < start)
+	{
+		str = ft_calloc(1, 1);
+		return (str);
+	}
+    str = ft_substr(s1, start, final - start + 1);
+    if (!str)
+        return (NULL);
     return (str);
 }
 
@@ -45,4 +49,3 @@ static int ft_isunwanted(char c, char const *unwanted)
     }
     return (0);
 }
-
