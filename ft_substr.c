@@ -13,20 +13,23 @@
 #include "libft.h"
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	char	*str;
+	size_t  substr_length;
+	char	*substr;
 
 	if (!s)
 		return (NULL);
-	i = 0;
-	str = (char *)ft_calloc(len + 1, sizeof(char));
-	if (!str)
-		return (NULL);
-	while (i < len)
+	substr_length = ft_strlen(s) - start;
+	if (ft_strlen(s) > start)
 	{
-		str[i] = s[start + i];
-		i++;
+	    if (substr_length > len)
+	        substr = (char *) ft_calloc(len + 1, sizeof(char));
+	    else
+	        substr = (char *) ft_calloc(substr_length + 1, sizeof(char));
+	    if (!substr)
+	        return (NULL);
+	    ft_strlcpy(substr, &s[start], len + 1);
 	}
-	str[i] = '\0';
-	return (str);
+	else
+	    substr = (char *) ft_calloc(1, sizeof(char));
+	return (substr);
 }
