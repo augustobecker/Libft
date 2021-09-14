@@ -23,7 +23,7 @@ char    *ft_strtrim(char const *s1, char const *set)
     final = ft_strlen(s1) - 1;
     while (ft_isunwanted(s1[start], set) && s1[start])
         start++;
-    while (ft_isunwanted(s1[final], set) && final >= 0)
+    while (ft_isunwanted(s1[final], set) && final > 0)
         final--;
     if (final < start)
 	{
