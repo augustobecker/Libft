@@ -13,22 +13,12 @@
 #include "libft.h"
 char	*ft_strjoin(const char *s1, const char *s2)
 {
-	size_t	i;
-	size_t	i_s2;
 	char	*str;
 
-	i = 0;
-	i_s2 = 0;
 	str = (char *)ft_calloc((ft_strlen(s1) + ft_strlen(s2)) + 1, sizeof(char));
-	if (str == NULL)
+	if (!str)
 		return (NULL);
-	while (i < ft_strlen(s1))
-	{
-		str[i] = s1[i];
-		i++;
-	}
-	while (i < ft_strlen(s1) + ft_strlen(s2))
-		str[i++] = s2[i_s2++];
-	str[i] = 0;
+	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
+	ft_strlcat(str, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
 	return (str);
 }
