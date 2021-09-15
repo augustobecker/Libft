@@ -13,13 +13,17 @@
 #include "libft.h"
 static	int	ft_isblank(char a);
 
+static	int	ft_error(int sign);
+
 int	ft_atoi(const char *str)
 {
 	int	nbr;
 	int	sign;
+	int	nbr_len;
 
 	nbr = 0;
 	sign = 1;
+	nbr_len = 0;
 	while (ft_isblank(*str))
 		str++;
 	if (*str == '-' || *str == '+')
@@ -30,6 +34,8 @@ int	ft_atoi(const char *str)
 	}
 	while (ft_isdigit(*str))
 	{
+		if (++nbr_len == 20)
+			return (ft_error(sign));
 		nbr = (*str - 48) + nbr * 10;
 		str++;
 	}
@@ -44,4 +50,12 @@ static	int	ft_isblank(char a)
 		|| (a == '\t')
 		|| (a == '\r')
 		|| (a == ' '));
+}
+
+static	int	ft_error(int sign)
+{
+	if (sign > 0)
+		return (-1);
+	else
+		return (0);
 }
