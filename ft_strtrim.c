@@ -18,7 +18,9 @@ char    *ft_strtrim(char const *s1, char const *set)
     size_t     start;
     size_t     final;
     char    *str;
-
+    
+	if (!s1 || !set)
+		return (NULL);
     start = 0;
     final = ft_strlen(s1) - 1;
     while (ft_isunwanted(s1[start], set) && s1[start])
