@@ -6,7 +6,7 @@
 /*   By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 21:26:32 by acesar-l          #+#    #+#             */
-/*   Updated: 2021/09/15 21:34:26 by acesar-l         ###   ########.fr       */
+/*   Updated: 2021/09/15 21:52:13 by acesar-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	s_len = ft_strlen(s);
+	if (!s)
+		return (NULL);
 	words = ft_count_words(s, c);
 	split = (char **) ft_calloc(sizeof(char *), words + 1);
 	if (!split)
