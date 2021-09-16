@@ -7,7 +7,9 @@ char	**ft_split(char const *s, char c)
 {
 	size_t	words;
 	char	**split;
-
+	
+	if (!s)
+		return (NULL)
 	words = ft_count_words(s, c);
 	split = (char **) ft_calloc(sizeof(char *), words + 1);
 	if (!split)
