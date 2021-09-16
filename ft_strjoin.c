@@ -6,7 +6,7 @@
 /*   By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:33:22 by acesar-l          #+#    #+#             */
-/*   Updated: 2021/09/07 16:33:24 by acesar-l         ###   ########.fr       */
+/*   Updated: 2021/09/15 21:38:04 by acesar-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*str;
-	
-	if (!str || !s2)
+
+	if (!s1 || !s2)
 		return (NULL);
 	str = (char *)ft_calloc((ft_strlen(s1) + ft_strlen(s2)) + 1, sizeof(char));
 	if (!str)

@@ -6,14 +6,14 @@
 /*   By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:09:45 by acesar-l          #+#    #+#             */
-/*   Updated: 2021/09/10 09:06:42 by acesar-l         ###   ########.fr       */
+/*   Updated: 2021/09/15 21:42:48 by acesar-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*p1;
 	unsigned char	*p2;
 

@@ -6,7 +6,7 @@
 /*   By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:50:06 by acesar-l          #+#    #+#             */
-/*   Updated: 2021/09/07 17:18:34 by acesar-l         ###   ########.fr       */
+/*   Updated: 2021/09/15 21:34:59 by acesar-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
 	char			*str;
-	
+
 	if (!s || !f)
 		return (NULL);
 	i = 0;

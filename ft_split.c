@@ -1,23 +1,39 @@
-#include "libft.h"
-static size_t	ft_count_words(char const *str, char argument);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/15 21:26:32 by acesar-l          #+#    #+#             */
+/*   Updated: 2021/09/15 21:34:26 by acesar-l         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-static char	**ft_malloc_words(char const *s, char argument, char **split);
+#include "libft.h"
+static size_t	ft_count_words(char const *str, char c);
+
+static char		**ft_malloc_words(char const *s, char c, char **split, size_t s_len);
 
 char	**ft_split(char const *s, char c)
 {
 	size_t	words;
+	size_t	s_len;
 	char	**split;
 
+	if (!s)
+		return (NULL);
+	s_len = ft_strlen(s);
 	words = ft_count_words(s, c);
 	split = (char **) ft_calloc(sizeof(char *), words + 1);
 	if (!split)
 		return (NULL);
-	split = ft_malloc_words(s, c, split);
+	split = ft_malloc_words(s, c, split, s_len);
 	split[words] = NULL;
 	return (split);
 }
 
-static size_t	ft_count_words(char const *str, char argument)
+static size_t	ft_count_words(char const *str, char c)
 {
 	size_t	words;
 	size_t	new_word;
@@ -26,32 +42,30 @@ static size_t	ft_count_words(char const *str, char argument)
 	new_word = 0;
 	while (*str)
 	{
-		if (*str != argument && !new_word)
+		if (*str != c && !new_word)
 		{
 			new_word = 1;
 			words++;
 		}
-		else if (*str == argument)
+		else if (*str == c)
 			new_word = 0;
 		str++;
 	}
 	return (words);
 }
 
-static char	**ft_malloc_words(char const *s, char argument, char **split)
+static char	**ft_malloc_words(char const *s, char c, char **split, size_t s_len)
 {
 	size_t	i;
 	size_t	split_i;
 	size_t	word_len;
-	size_t 	str_len;
 
 	i = 0;
 	split_i = 0;
 	word_len = 0;
-	str_len = ft_strlen(s);
-	while (i < str_len + 1 && str_len > 0)
+	while (i < s_len + 1 && s_len > 0)
 	{
-		if (s[i] == argument || !s[i])
+		if (s[i] == c || !s[i])
 		{
 			if (word_len > 0)
 			{

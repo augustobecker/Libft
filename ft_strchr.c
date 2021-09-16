@@ -6,13 +6,13 @@
 /*   By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:23:00 by acesar-l          #+#    #+#             */
-/*   Updated: 2021/09/07 16:23:04 by acesar-l         ###   ########.fr       */
+/*   Updated: 2021/09/15 21:40:46 by acesar-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strchr(const char *str, int argument)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -22,6 +22,6 @@ char	*ft_strchr(const char *str, int argument)
 		i++;
 	}
 	if (argument == '\0')
-	    return ((char *) &str[i]);
+		return ((char *) &str[i]);
 	return ((void *) 0);
 }
