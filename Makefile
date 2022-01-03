@@ -12,7 +12,7 @@
 
 NAME		= libft.a
 
-CC 			= clang
+CC 		= clang
 
 FLAGS 		= -Wall -Werror -Wextra
 
@@ -54,6 +54,7 @@ SRCS 		= ft_isalpha.c 		\
 			ft_putstr_fd.c 		\
 			ft_putendl_fd.c 	\
 			ft_putnbr_fd.c
+
 BONUS_SRCS  = ft_lstnew.c		\
 			ft_lstadd_front.c	\
 			ft_lstsize.c		\
@@ -71,22 +72,22 @@ BONUS_OBJS 	= $(BONUS_SRCS:.c=.o)
 all:		${NAME}
 
 ${NAME}: 	${OBJS}
-			ar rcs ${NAME} ${OBJS}
+		ar rcs ${NAME} ${OBJS}
 
 bonus:		${NAME} ${BONUS_OBJS}
-			ar rcs ${NAME} ${BONUS_OBJS}
+		ar rcs ${NAME} ${BONUS_OBJS}
 
 .c.o:
-			${CC} ${FLAGS} -c $< -o ${<:.c=.o}
+		${CC} ${FLAGS} -c $< -o ${<:.c=.o}
 
 clean:
-			${REMOVE} ${OBJS} ${BONUS_OBJS}
-			echo "Objects deleted"
+		${REMOVE} ${OBJS} ${BONUS_OBJS}
+		echo "Objects deleted"
 
 fclean:		clean
-			${REMOVE} ${NAME}
-			echo "$(NAME) deleted"
+		${REMOVE} ${NAME}
+		echo "$(NAME) deleted"
 
 re :		fclean all
 
-.PHONY:	all clean fclean re
+.PHONY:		all clean fclean re bonus
