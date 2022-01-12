@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static	int	ft_isblank(char a);
 
 static	int	ft_error(int sign);
