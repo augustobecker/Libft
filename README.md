@@ -48,7 +48,7 @@ Now to clean up (removing the .o files), call make clean:
 Now you just have to add this header at your .c files and use the Libft functions:
 
       #include "libft.h"
-If you try to compile your .c files with gcc using clang example.c you will get an undefined symbol error for Libft functions.
+If you try to compile your .c files with clang using clang example.c you will get an undefined symbol error for Libft functions.
 
 You have to tell the file where your library resides and which library it's using:
 
