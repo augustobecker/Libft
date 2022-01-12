@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static int	ft_isunwanted(char c, char const *unwanted);
 
 char	*ft_strtrim(char const *s1, char const *set)
