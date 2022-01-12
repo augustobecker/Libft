@@ -62,25 +62,23 @@ That's it. Now run it using ./a.out
 
 ## How do I test it?
 
-To test the code we're going to be using @alelievr's Libft Unit Test. There are some good others but I'll only be covering this one.
+To test the code we're going to be using @jgambard's Libft Tester. There are some good others but I'll only be covering this one.
 
 To test the code in this repo
-Clone this repo and cd into it, make sure it's called libft:
+Clone this repo and cd into it:
 
       git clone https://github.com/augustobecker/libft libft
       
       cd libft/
  
-Run Make so you can build the library:
-
-      make
-Go back to the root directory and clone @alelievr's Libft Unit Test:
-
-    cd ..
+Now, clone @jgambard's Libft Tester
     
-    git clone https://github.com/alelievr/libft-unit-test libft-unit-test
-Go into the test folder and run the test:
+    git clone https://github.com/Tripouille/libftTester libftTester
+Go into the test folder and run the mandatory test and then the bonus test:
 
-    cd libft-unit-test/
-    make f
-If you did everything correctly you should get a cool list of tests showing you the function names and if they passed or not.
+    cd libftTester
+    make m
+    make b
+    
+If you did everything correctly you should see something like this:
+![image](https://user-images.githubusercontent.com/81205527/149175403-68b2b73b-5669-45ff-a874-e95055abe0e3.png)
