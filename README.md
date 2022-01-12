@@ -7,7 +7,7 @@
 * [How do I test it?](#how-do-i-test-it)
 
 ## What is libft?
- The first project at 42. It consists of a static library with recoded functions from the Standard library (stdlib) that can be used as a support in
+ The first project at 42. It consists of a static library with recoded standard functions in C that can be used as a support in
  future 42 projects, since it's not allowed to use the original functions.
  
 ## How does it work?
