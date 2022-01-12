@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static	int	ft_nblength(long int nb);
 
 static	char	*ft_rev_str(char *str);
