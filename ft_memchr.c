@@ -11,10 +11,11 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memchr(const void *str, int argument, size_t size)
 {
 	unsigned char	*s;
-	size_t			i;
+	size_t		i;
 
 	i = 0;
 	s = (unsigned char *) str;
