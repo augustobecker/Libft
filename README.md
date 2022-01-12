@@ -13,7 +13,7 @@
 ## How does it work?
 
 The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files.
-These files are transformed into objects (.o) to be later linked in the library, we do this just by compiling with the -c flag.
+These files are compiled into objects (.o) to be later inserted in the library, we do this just by compiling with the -c flag.
 
       clang -c example1.c example1.o
       clang -c example2.c example2.o
