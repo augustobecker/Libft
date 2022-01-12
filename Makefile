@@ -44,7 +44,7 @@ SRCS 		= ft_isalpha.c 		\
 			ft_strnstr.c 		\
 			ft_itoa.c 		\
 			ft_substr.c 		\
-			ft_split.c 			\
+			ft_split.c 		\
 			ft_strjoin.c 		\
 			ft_strtrim.c		\
 			ft_itoa.c 		\
