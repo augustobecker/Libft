@@ -1,16 +1,19 @@
-# Libft - @42sp
-![image](https://user-images.githubusercontent.com/81205527/149165832-9344c9e5-6075-4268-b276-26b60efc5733.png)
+<h1 align="center">  Libft - @42sp </h1>
+
+<img src="https://user-images.githubusercontent.com/81205527/149165832-9344c9e5-6075-4268-b276-26b60efc5733.png">
+
 ## Index
 * [What is libft?](#what-is-libft)
 * [How does it work?](#how-does-it-work)
 * [How do I use the library?](#how-do-i-use-the-library)
 * [How do I test it?](#how-do-i-test-it)
 
-## What is libft?
+<h2 align="center" id="what-is-libft"> What is libft? </h2>
+
  The first project at 42. It consists of a static library with recoded standard functions in C that can be used as a support in
  future 42 projects, since it's not allowed to use the original functions.
  
-## How does it work?
+<h2 align="center" id="how-does-it-work"> How does it work? </h2>
 
 The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files.
 These files are compiled into objects (.o) to be later inserted in the library, we do this just by compiling with the -c flag.
@@ -27,7 +30,7 @@ With the files transformed into objects, we don't need to compile all the code a
 
 The Makefile is used to automate the process as there are at least 40 files to be compiled into objects and then linked into the library.
  
-## How do I use the library?
+<h2 align="center" id="how-do-i-use-the-library"> How do I use the library? </h2>
 It aims to create a library called libft.a from the source files.
 
 To create this library, clone the project:
@@ -60,7 +63,7 @@ You have to tell the file where your library resides and which library it's usin
 
 That's it. Now run it using ./a.out
 
-## How do I test it?
+<h2 align="center" id="how-do-i-test-it"> How do I test it? </h2>
 
 To test the code we're going to be using @jgambard's Libft Tester. There are some good others but I'll only be covering this one.
 
