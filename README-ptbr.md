@@ -2,91 +2,91 @@
 
 <p align="center">:information_source: Uma Biblioteca estática em C com funções padrão re-escritas </p>
 
-<img src="https://user-images.githubusercontent.com/81205527/149165832-9344c9e5-6075-4268-b276-26b60efc5733.png">
+<p align="center"><img src="https://user-images.githubusercontent.com/81205527/149165832-9344c9e5-6075-4268-b276-26b60efc5733.png"> </p>
+<p align="center"><a href="https://github.com/augustobecker/libft/blob/master/README.md" target="_blank"><img src="https://img.shields.io/badge/available%20in-EN-blue"></a></p>
 
 ## Índice
-* [O que é Libft?](#what-is-libft)
-* [Requisitos](#requirements)
-* [Como funciona?](#how-does-it-work)
-* [Como eu uso a Biblioteca?](#how-do-i-use-the-library)
-* [Como eu testo?](#how-do-i-test-it)
-
-<h2 align="center" id="what-is-libft"> What is Libft? </h2>
-
- The first project at 42 programming school. It consists of a static library with recoded standard functions in C that runs and compiles the code using a Makefile.
- The library can be used as a support in future school's projects, since it's not allowed to use the original functions. 
+* [O que é Libft?](#o-que-e-libft)
+* [Requisitos](#requisitos)
+* [Como funciona?](#como-funciona)
+* [Como eu uso a Biblioteca?](#como-eu-uso-a-biblioteca)
+* [Como eu testo?](#como-eu-testo)
  
- <h2 align="center" id="requirements"> Requirements </h2>
+<h2 align="center" id="o-que-e-libft"> O que é Libft? </h2>
 
-<p  align="center"> :warning: The project must be written in accordance with the <a href="https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf" target="_blank">Norm</a> </p>
-The Norm  is a programming standard that defines a set of rules to follow when writing code at 42. It applies to all C projects within the Common Core by default, and
-to any project where it's specified. These are some of them:
-
-    Each function must be maximum 25 lines, not counting the function's own curly brackets.
-    
-    Each line must be at most 80 columns wide, comments included.
-    
-    A function can take 4 named parameters maximum.
-    
-    You can't declare more than 5 variables per function.
-    
-    You're not allowed to use: for , do...while , switch , case ,  goto  ,
-    ternary operators such as `?' and VLAs - Variable Length Arrays.
-  The norminette (as we call the norm at 42) is in python and open source.
-  
-  Its repository is available at https://github.com/42School/norminette.
-  
-<h2 align="center" id="how-does-it-work"> How does it work? </h2>
-
-The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files.
-These files are compiled into objects (.o) to be later inserted in the library, we do this just by compiling with the -c flag.
-
-      clang -c example1.c example1.o
-      clang -c example2.c example2.o
-      clang -c example3.c example3.o
-      clang -c example4.c example4.o
-And then using ar rcs command to create the library with all the objects.
-
-      ar rcs libft.a example1.o example2.o example3.o example4.o
-
-With the files transformed into objects, we don't need to compile all the code again in case there is any change, only the file that was changed would be recompiled.
-
-The Makefile is used to automate the process as there are at least 40 files to be compiled into objects and then linked into the library.
+ O Primeiro projeto na 42. Consiste em uma biblioteca estática em C com funções padrão da linguagem recodificadas que rodam e compilam usando um Makefile.
+ A biblioteca pode ser usada de apoio em projetos futuros, uma vez que não é permitido o uso das funções originais.
  
-<h2 align="center" id="how-do-i-use-the-library"> How do I use the library? </h2>
-It aims to create a library called libft.a from the source files.
+ <h2 align="center" id="requisitos"> Requisitos </h2>
 
-To create this library, clone the project:
+<p  align="center"> :warning: O projeto deve estar de acordo com a <a href="https://github.com/42School/norminette/blob/master/pdf/pt_br.norm.pdf" target="blank">Norma</a> </p>
+A Norma é um padrão de programação que define um conjunto de regras a seguir ao escrever um código na 42. A norma aplica-se a todos os projetos C dentro do currículo interno por padrão, e para qualquer projeto onde é especificado. Aqui algumas das regras:
+
+    Cada função dever ter no máximo 25 linhas, não contando suas próprias chaves '{}'.
+    
+    Cada linha deve ter no máximo 80 colunas de largura, comentários incluídos.
+    
+    Uma função pode ter no máximo 4 parâmetros definidos.
+   
+    Não podem ser declaradas mais que 5 variáveis por função.
+    
+    Não é permitido o uso de: for , do...while , switch , case ,  goto  ,
+    operadores ternários como `?' e VLAs - Matrizes de comprimento variável.
+  A norminette (como chamamos a norma na 42) é feita em python e é open source.
+  
+  O repositório está disponível em https://github.com/42School/norminette.
+  
+<h2 align="center" id="como-funciona"> Como funciona? </h2>
+
+O funcionamento da biblioteca pode ser explicado apenas desmembrando o Makefile. As funções da biblioteca estão todas em arquivos .c.
+Estes arquivos são compilados em objetos (.o) para serem depois inseridos na biblioteca, fazemos isso apenas compilando com a flag -c.
+
+      clang -c exemplo1.c exemplo1.o
+      clang -c exemplo2.c exemplo2.o
+      clang -c exemplo3.c exemplo3.o
+      clang -c exemplo4.c exemplo4.o
+E então usando o comando ar rcs para criar a biblioteca com todos os objetos.
+
+      ar rcs libft.a exemplo1.o exemplo2.o exemplo3.o exemplo4.o
+
+Com todos esses arquivos transformados em objetos não precisamos compilar todo o código de novo em caso de alguma alteração, apenas os arquivos modificados seriam recompilados.
+
+O Makefile é usado para automatizar o processo, uma vez que há pelo menos 40 arquivos a ser compilados em objeto e depois linkados na biblioteca.
+ 
+<h2 align="center" id="como-eu-uso-a-biblioteca"> Como eu uso a Biblioteca? </h2>
+O objetivo é criar uma bilioteca chamada libft.a feita com os arquivos fonte.
+
+Para criar a biblioteca, clone o projeto:
 
      git clone https://github.com/augustobecker/libft libft
-Enter the repository:
+Entre no repositório:
 
       cd libft
-Run Make (to run the Makefile that will compile the source code and create the library):
+Rode o comando Make (para executar o Makefile que vai compilar o código fonte e criar a biblioteca):
 
       make
 
-You should see a libft.a file and some object files (.o).
+Você deve ver um arquivo libft.a e alguns arquivos objeto (.o).
 
-Now to clean up (removing the .o files), call make clean:
+Agora, para limpar tudo (remover os arquivos .o), use make clean:
 
       make clean
-Now you just have to add this header at your .c files and use the Libft functions:
+Agora, só precisa adicionar esse cabeçalho nos seus arquivos .c e usar as funções da Libft:
 
       #include "libft.h"
-If you try to compile your .c files with clang using clang example.c you will get an undefined symbol error for Libft functions.
+Se tentar compilar seus arquivos com clang usando clang examplo.c vai receber um erro de undefined symbol para as funções da Libft.
 
-You have to tell the file where your library resides and which library it's using:
+Você deve mostrar o caminho para sua biblioteca e qual é a biblioteca:
 
-    clang example.c -L. -lft
+    clang examplo.c -L. -lft
 
--L takes the path to your library. . in this case
+-L mostra o caminho para sua biblioteca (.) nesse caso
 
 -l takes the name of your library. This is the set of characters that come after lib in your library name.
 
 That's it. Now run it using ./a.out
 
-<h2 align="center" id="how-do-i-test-it"> How do I test it? </h2>
+<h2 align="center" id="como-eu-testo"> Como eu testo? </h2>
 
 To test the code we're going to be using @jgambard's Libft Tester. There are some good others but I'll only be covering this one.
 
