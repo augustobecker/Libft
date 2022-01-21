@@ -37,6 +37,14 @@ to any project where it's specified. These are some of them:
   
   Its repository is available at https://github.com/42School/norminette.
   
+   In addition to the Norm, the subject have other requirements, which are:
+  
+    It is forbidden to declare global variables.
+   
+    Using the command libtool to create your library is forbidden.
+    
+    Your Makefile must compile with the flags -Wall, -Wextra and -Werror.
+  
 <h2 align="center" id="how-does-it-work"> How does it work? </h2>
 
 The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files.
