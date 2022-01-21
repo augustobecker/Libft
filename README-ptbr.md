@@ -34,7 +34,15 @@ A Norma é um padrão de programação que define um conjunto de regras a seguir
     operadores ternários como `?' e VLAs - Matrizes de comprimento variável.
   A norminette (como chamamos a norma na 42) é feita em python e é open source.
   
-  O repositório está disponível em https://github.com/42School/norminette.
+  O repositório está disponível em https://github.com/42School/norminette
+  
+  Além da norma padrão, o projeto tem alguns requisitos próprios
+  
+    É proibido declarar variáveis globais.
+   
+    Usar o comando libtool para criar a biblioteca é proibido.
+    
+    O Makefile deve compilar com as flags -Wall, -Wextra e -Werror
   
 <h2 align="center" id="como-funciona"> Como funciona? </h2>
 
@@ -100,7 +108,7 @@ Clone o repositório e entre nele:
 Agora, clone o Libft Tester do @jgambard
     
     git clone https://github.com/Tripouille/libftTester libftTester
-Entre na pasta do Tester and rode o teste mandatório e então o bônus:
+Entre na pasta do Tester e rode o teste mandatório e então o bônus:
 
     cd libftTester
     make m
