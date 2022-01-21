@@ -58,7 +58,7 @@ O objetivo é criar uma bilioteca chamada libft.a feita com os arquivos fonte.
 
 Para criar a biblioteca, clone o projeto:
 
-   git clone https://github.com/augustobecker/libft libft
+    git clone https://github.com/augustobecker/libft libft
 Entre no repositório:
 
     cd libft
