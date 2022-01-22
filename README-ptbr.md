@@ -3,7 +3,7 @@
 <p align="center">:information_source: Uma Biblioteca estática em C com funções padrão recodificadas </p>
 
 <p align="center"><img src="https://user-images.githubusercontent.com/81205527/149165832-9344c9e5-6075-4268-b276-26b60efc5733.png"> </p>
-<p align="center"><a href="https://github.com/augustobecker/libft/blob/master/README.md" target="_blank"><img src="https://img.shields.io/badge/available%20in-EN-blue"></a></p>
+<p align="center"><a href="https://github.com/augustobecker/Libft/blob/master/README.md" target="_blank"><img src="https://img.shields.io/badge/available%20in-EN-blue"></a></p>
 
 ## Índice
 * [O que é Libft?](#o-que-e-libft)
