@@ -12,6 +12,7 @@
 * [How does it work?](#how-does-it-work)
 * [How do I use the library?](#how-do-i-use-the-library)
 * [How do I test it?](#how-do-i-test-it)
+* [Author](#author)
 
 <h2 align="center" id="what-is-libft"> What is Libft? </h2>
 
@@ -118,3 +119,15 @@ Go into the test folder and run the mandatory test and then the bonus test:
     
 If you did everything correctly you should see something like this:
 ![image](https://user-images.githubusercontent.com/81205527/149175403-68b2b73b-5669-45ff-a874-e95055abe0e3.png)
+
+ <h2 align="center" id="author"> Author </h2>
+
+<p align="center"><img src="https://user-images.githubusercontent.com/81205527/152089472-0aa06bd9-d882-4c83-adfc-8230d1e958c1.png"> </p>
+<p align="center"><strong> Augusto Becker | acesar-l | 🇧🇷👨‍🚀</strong></p>
+<p align="center"> :wave: How to reach me: </p>
+
+<div>
+  <p align="center"><a href = "mailto:augustobecker.dev@gmail.com"><img src="https://img.shields.io/badge/augustobecker.dev@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"> </a></p>
+  <p align="center"><a href="https://www.linkedin.com/in/augusto-becker/" target="_blank"><img src="https://img.shields.io/badge/-Augusto Becker-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> </p>
+  <p align="center"><a href="https://www.instagram.com/augusto.becker/" target="_blank"><img src="https://img.shields.io/badge/-augusto.becker-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a></p>
+</div>
