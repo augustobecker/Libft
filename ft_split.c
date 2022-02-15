@@ -6,14 +6,15 @@
 /*   By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 21:26:32 by acesar-l          #+#    #+#             */
-/*   Updated: 2021/09/15 21:52:13 by acesar-l         ###   ########.fr       */
+/*   Updated: 2021/12/29 16:58:16 by acesar-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-static size_t	ft_count_words(char const *str, char c);
 
-static char		**ft_malloc_words(char const *s, char c, char **split, size_t s_len);
+static size_t	count_words(char const *str, char c);
+
+static char		**alloc_word(char const *s, char c, char **split, size_t s_len);
 
 char	**ft_split(char const *s, char c)
 {
@@ -26,16 +27,16 @@ char	**ft_split(char const *s, char c)
 	s_len = ft_strlen(s);
 	if (!s)
 		return (NULL);
-	words = ft_count_words(s, c);
+	words = count_words(s, c);
 	split = (char **) ft_calloc(sizeof(char *), words + 1);
 	if (!split)
 		return (NULL);
-	split = ft_malloc_words(s, c, split, s_len);
+	split = alloc_word(s, c, split, s_len);
 	split[words] = NULL;
 	return (split);
 }
 
-static size_t	ft_count_words(char const *str, char c)
+static size_t	count_words(char const *str, char c)
 {
 	size_t	words;
 	size_t	new_word;
@@ -56,7 +57,7 @@ static size_t	ft_count_words(char const *str, char c)
 	return (words);
 }
 
-static char	**ft_malloc_words(char const *s, char c, char **split, size_t s_len)
+static char	**alloc_word(char const *s, char c, char **split, size_t s_len)
 {
 	size_t	i;
 	size_t	split_i;
