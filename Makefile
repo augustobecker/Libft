@@ -6,11 +6,15 @@
 #    By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/07 17:02:42 by acesar-l          #+#    #+#              #
-#    Updated: 2021/09/07 17:17:31 by acesar-l         ###   ########.fr        #
+#    Updated: 2022/02/19 12:17:31 by acesar-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libft.a
+
+GREEN		= \033[0;32m
+RED		= \033[0;31m
+RESET		= \033[0m
 
 CC 		= clang
 
@@ -55,7 +59,7 @@ SRCS 		= ft_isalpha.c 		\
 			ft_putendl_fd.c 	\
 			ft_putnbr_fd.c
 
-BONUS_SRCS  = ft_lstnew.c		\
+BONUS_SRCS  	= ft_lstnew.c		\
 			ft_lstadd_front.c	\
 			ft_lstsize.c		\
 			ft_lstlast.c		\
@@ -73,21 +77,27 @@ all:		${NAME}
 
 ${NAME}: 	${OBJS}
 		ar rcs ${NAME} ${OBJS}
+		@echo "$(NAME): $(GREEN)$(NAME) was created$(RESET)"
 
 bonus:		${NAME} ${BONUS_OBJS}
 		ar rcs ${NAME} ${BONUS_OBJS}
+		@echo "$(NAME): $(GREEN)$(NAME) was created with Bonus$(RESET)"
 
 .c.o:
 		${CC} ${FLAGS} -c $< -o ${<:.c=.o}
+		@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
 
 clean:
 		${REMOVE} ${OBJS} ${BONUS_OBJS}
-		echo "Objects deleted"
+		@echo "$(NAME): $(RED)object files were deleted$(RESET)"
 
 fclean:		clean
 		${REMOVE} ${NAME}
-		echo "$(NAME) deleted"
+		@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
 
 re :		fclean all
 
-.PHONY:		all clean fclean re bonus
+norm:		
+		norminette
+
+.PHONY:		all clean fclean re bonus norm
