@@ -86,13 +86,9 @@ Agora, só precisa adicionar esse cabeçalho nos seus arquivos .c e usar as fun�
     #include "libft.h"
 Se tentar compilar seus arquivos com clang usando clang examplo.c vai receber um erro de undefined symbol para as funções da Libft.
 
-Você deve mostrar o caminho para sua biblioteca e qual é a biblioteca:
+Você deve mostrar qual é a biblioteca:
 
-    clang exemplo.c -L. -lft
-
--L mostra o caminho para sua biblioteca (.) nesse caso
-
--l Recebe o nome da biblioteca. Essa é a sequência de caracteres que vem após o lib no nome da sua biblioteca lib<strong>ft</strong>.
+    clang exemplo.c libft.a
 
 É isso, agora basta executar com ./a.out
 
