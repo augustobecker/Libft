@@ -6,7 +6,7 @@
 /*   By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:53:29 by acesar-l          #+#    #+#             */
-/*   Updated: 2021/09/15 21:37:40 by acesar-l         ###   ########.fr       */
+/*   Updated: 2021/03/06 10:00:42 by acesar-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -64,5 +65,20 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+char	*get_next_line(int fd);
+int	ft_printf(const char *str, ...);
+int	ft_argument_c(char c);
+int	ft_arguments_d_i(int c);
+int	ft_argument_p(unsigned long nbr);
+int	ft_argument_percent(void);
+int	ft_argument_s(char *str);
+int	ft_argument_u(unsigned int nbr);
+int	ft_arguments_x(unsigned int nbr, char type);
+int	ft_is_argument(char a);
+int	ft_decimal_length(long int nbr);
+void	ft_free_ptr(char **ptr);
+char	ft_decimal_converter_to_hex(char digit, char type);
+int	ft_hex_length(unsigned long nbr);
+int	ft_print_reversed_str(char *str);
 
 #endif
