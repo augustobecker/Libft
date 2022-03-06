@@ -13,6 +13,7 @@
 * [Como funciona?](#como-funciona)
 * [Como eu uso a Biblioteca?](#como-eu-uso-a-biblioteca)
 * [Como eu testo?](#como-eu-testo)
+* [Autor](#autor) 
  
 <h2 align="center" id="o-que-e-libft"> O que é Libft? </h2>
 
@@ -114,3 +115,16 @@ Entre na pasta do Tester e rode o teste mandatório e então o bônus:
     
 Se você fez tudo corretamente, deve ver algo como isso:
 ![image](https://user-images.githubusercontent.com/81205527/149175403-68b2b73b-5669-45ff-a874-e95055abe0e3.png)
+
+ <h2 align="center" id="autor"> Autor </h2>
+<div>
+    <img height="180em" src="https://user-images.githubusercontent.com/81205527/152089472-0aa06bd9-d882-4c83-adfc-8230d1e958c1.png">
+    
+<strong> Augusto Becker | acesar-l | 🇧🇷👨‍🚀</strong>
+    
+:wave: Fale comigo: 
+    
+  <a href = "mailto:augustobecker.dev@gmail.com"><img src="https://img.shields.io/badge/augustobecker.dev@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"> </a>
+  <a href="https://www.linkedin.com/in/augusto-becker/" target="_blank"><img src="https://img.shields.io/badge/-Augusto Becker-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="https://www.instagram.com/augusto.becker/" target="_blank"><img src="https://img.shields.io/badge/-augusto.becker-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+</div>
