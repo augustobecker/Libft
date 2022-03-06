@@ -70,22 +70,22 @@ It aims to create a library called libft.a from the source files.
 
 To create this library, clone the project:
 
-     git clone https://github.com/augustobecker/libft libft
+    git clone https://github.com/augustobecker/libft libft
 Enter the repository:
 
-      cd libft
+    cd libft
 Run Make (to run the Makefile that will compile the source code and create the library):
 
-      make
+    make
 
 You should see a libft.a file and some object files (.o).
 
 Now to clean up (removing the .o files), call make clean:
 
-      make clean
+    make clean
 Now you just have to add this header at your .c files and use the Libft functions:
 
-      #include "libft.h"
+    #include "libft.h"
 If you try to compile your .c files with clang using clang example.c you will get an undefined symbol error for Libft functions.
 
 You have to tell the file where your library resides:
@@ -101,9 +101,9 @@ To test the code we're going to be using @jgambard's Libft Tester. There are som
 To test the code in this repo
 Clone this repo and cd into it:
 
-      git clone https://github.com/augustobecker/libft libft
-      
-      cd libft/
+    git clone https://github.com/augustobecker/libft libft
+     
+	cd libft/	
  
 Now, clone @jgambard's Libft Tester
     
