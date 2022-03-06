@@ -22,6 +22,10 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 100
+# endif
+
 int	ft_isalpha(int argument);
 int	ft_isdigit(int argument);
 int	ft_isalnum(int argument);
