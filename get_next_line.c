@@ -29,7 +29,7 @@ static char	*get_line(char **backup, char **line)
 	}
 	else
 		*line = ft_strdup(*backup);
-	free_ptr(backup);
+	ft_free_ptr(backup);
 	return (next_backup);
 }
 
@@ -47,10 +47,10 @@ static int	read_line(int fd, char **buffer, char **backup, char **line)
 		*backup = ft_strjoin(temporary, *buffer);
 		free(temporary);
 	}
-	free_ptr(buffer);
+	ft_free_ptr(buffer);
 	*backup = get_line(backup, line);
 	if (!(**line))
-		free_ptr(line);
+		ft_free_ptr(line);
 	return (bytes_read);
 }
 
