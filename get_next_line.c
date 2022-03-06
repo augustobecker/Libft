@@ -15,7 +15,7 @@
 static char	*get_line(char **backup, char **line)
 {
 	char	*next_backup;
-	int		i;
+	int	i;
 
 	i = 0;
 	next_backup = NULL;
@@ -35,7 +35,7 @@ static char	*get_line(char **backup, char **line)
 
 static int	read_line(int fd, char **buffer, char **backup, char **line)
 {
-	int		bytes_read;
+	int	bytes_read;
 	char	*temporary;
 
 	bytes_read = 1;
