@@ -67,7 +67,6 @@ SRCS 		= ft_isalpha.c 			\
 		ft_argument_s.c			\
 		ft_argument_u.c			\
 		ft_arguments_x.c		\
-		ft_is_argument.c		\
 		ft_print_reversed_str.c		\
 		ft_free_ptr.c			\
 		ft_hex_length.c			\
