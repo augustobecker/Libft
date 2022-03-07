@@ -18,8 +18,32 @@
 <h2 align="center" id="what-is-libft"> What is Libft? </h2>
 
  The first project at 42 programming school. It consists of a static library with recoded standard functions in C that runs and compiles the code using a Makefile.
- The library can be used as a support in future school's projects, since it's not allowed to use the original functions. 
+ The library can be used as a support in future school's projects, since it's not allowed to use the original functions.
+Once you finish the project, you can (and should) include more functions to Libft than previously asked. For example, now the projects <a href="https://github.com/augustobecker/get_next_line">get_next_line</a> and <a href="https://github.com/augustobecker/ft_printf">ft_printf</a>  are part of my library.
+	
+The project is divided in three parts - Part I, Part II and Bonus.
+
+#### Part I.
+>In this first part, you must re-code a set of the libc functions, as defined in their
+>man. Your functions will need to present the same prototype and behaviors as the originals. Your functions’ names must be prefixed by “ft_”. For instance strlen becomes
+>ft_strlen.
+	
+<p align="center">• isalpha • isdigit • isalnum • isascii • isprint • strlen • memset • bzero • memcpy • memmove • strlcpy • strlcat • toupper • tolower • strchr • strrchr • strncmp • memchr • memcmp • strnstr • atoi • calloc • strdup</p>
  
+#### Part II.
+>In this second part, you must code a set of functions that are either not included in the
+>libc, or included in a different form. Some of these functions can be useful to write Part
+>1’s functions.
+
+<p align="center">• substr • strjoin • strtrim • split • itoa • strmapi • striteri • putchar_fd • putstr_fd • putendl_fd • putnbr_fd</p>
+	
+#### Bonus.
+>In this Bonus part, you must code a set of functions that are useful to manipulate lists.
+
+	
+	
+<p align="center">• lstnew • lstadd_front • lstsize • lstlast • lstadd_back • lstdelone • lstclear • lstiter • lstmap</p>
+
  <h2 align="center" id="requirements"> Requirements </h2>
 
 <p  align="center"> :warning: The project must be written in accordance with the <a href="https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf" target="_blank">Norm</a> </p>
