@@ -9,6 +9,7 @@
  
 ## Index
 * [What is Libft?](#what-is-libft)
+* [Functions](#functions)
 * [Requirements](#requirements)
 * [How does it work?](#how-does-it-work)
 * [How do I use the library?](#how-do-i-use-the-library)
@@ -71,7 +72,105 @@ to any project where it's specified. These are some of them:
     Using the command libtool to create your library is forbidden.
     
     Your Makefile must compile with the flags -Wall, -Wextra and -Werror.
-  
+
+<h2 align="center" id="functions"> Functions </h2>
+
+### Functions from <ctype.h>
+	
+• <a href="">ft_isalpha</a> - checks for an alphabetic character
+	
+• <a href="">ft_isdigit</a> - checks for a digit (0 through 9).
+	
+• <a href="">ft_isalnum</a> - checks for an alphanumeric character
+	
+• <a href="">ft_isascii</a> - checks whether c fits into the ASCII character set
+	
+• <a href="">ft_isprint</a> - checks for any printable character
+	
+• <a href="">ft_toupper</a> - convert char to uppercase
+	
+• <a href="">ft_tolower</a> - convert char to lowercase
+	
+### Functions from <string.h>
+	
+• <a href="">ft_memset</a> - fill memory with a constant byte
+	
+• <a href="">ft_strlen</a> - calculate the length of a string
+	
+• <a href="">ft_bzero</a> - zero a byte string
+	
+• <a href="">ft_memcpy</a> - copy memory area
+	
+• <a href="">ft_memmove</a> - copy memory area
+	
+• <a href="">ft_strlcpy</a> - copy string to an specific size
+	
+• <a href="">ft_strlcat</a> - concatenate string to an specific size
+	
+• <a href="">ft_strchr</a> - locate character in string
+	
+• <a href="">ft_strrchr</a> - locate character in string
+	
+• <a href="">ft_strncmp</a> - compare two strings
+	
+• <a href="">ft_memchr</a> - scan memory for a character
+	
+• <a href="">ft_memcmp</a> - compare memory areas
+	
+• <a href="">ft_strnstr</a> - locate a substring in a string
+	
+• <a href="">ft_strdup</a> - creates a dupplicate for the string passed as parameter
+	
+### Functions from <stdlib.h>
+	
+• <a href="">ft_atoi</a> - convert a string to an integer
+	
+• <a href="">ft_calloc</a> - allocates memory and sets its bytes' values to 0
+	
+### Non-standard functions
+	
+• <a href="">ft_substr</a> - returns a substring from a string
+	
+• <a href="">ft_strjoin</a> - concatenates two strings
+	
+• <a href="">ft_strtrim</a> - trims the beginning and end of string with specific set of chars
+	
+• <a href="">ft_split</a> - splits a string using a char as parameter
+	
+• <a href="">ft_itoa</a> - converts a number into a string
+	
+• <a href="">ft_strmapi</a> - applies a function to each character of a string
+	
+• <a href="">ft_striteri</a> - applies a function to each character of a string
+	
+• <a href="">ft_putchar_fd</a> - output a char to a file descriptor
+	
+• <a href="">ft_putstr_fd</a> - output a string to a file descriptor
+	
+• <a href="">ft_putendl_fd</a> - output a string to a file descriptor, followed by a new line
+	
+• <a href="">ft_putnbr_fd</a> - output a number to a file descriptor
+	
+### Linked list functions
+	
+• <a href="">ft_lstnew</a> - creates a new list element
+	
+• <a href="">ft_lstadd_front</a> - adds an element at the beginning of a list
+	
+• <a href="">ft_lstsize</a> - counts the number of elements in a list
+	
+• <a href="">ft_lstlast</a> - returns the last element of the list
+	
+• <a href="">ft_lstadd_back</a> - adds an element at the end of a list
+	
+• <a href="">ft_lstclear</a> - deletes and free list
+	
+• <a href="">ft_lstiter</a> - applies a function to each element of a list
+	
+• <a href="">ft_lstmap </a> - applies a function to each element of a list
+	
+
+	
 <h2 align="center" id="how-does-it-work"> How does it work? </h2>
 
 The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files.
@@ -141,14 +240,15 @@ Go into the test folder and run the mandatory test and then the bonus test:
 If you did everything correctly you should see something like this:
 ![image](https://user-images.githubusercontent.com/81205527/149175403-68b2b73b-5669-45ff-a874-e95055abe0e3.png)
 
- <h2 align="center" id="author"> Author </h2>
-
-<p align="center"><img src="https://user-images.githubusercontent.com/81205527/152089472-0aa06bd9-d882-4c83-adfc-8230d1e958c1.png"> </p>
-<p align="center"><strong> Augusto Becker | acesar-l | 🇧🇷👨‍🚀</strong></p>
-<p align="center"> :wave: How to reach me: </p>
-
+<h2 align="center" id="author"> Author </h2>
 <div>
-  <p align="center"><a href = "mailto:augustobecker.dev@gmail.com"><img src="https://img.shields.io/badge/augustobecker.dev@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"> </a></p>
-  <p align="center"><a href="https://www.linkedin.com/in/augusto-becker/" target="_blank"><img src="https://img.shields.io/badge/-Augusto Becker-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> </p>
-  <p align="center"><a href="https://www.instagram.com/augusto.becker/" target="_blank"><img src="https://img.shields.io/badge/-augusto.becker-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a></p>
+    <img height="180em" src="https://user-images.githubusercontent.com/81205527/152089472-0aa06bd9-d882-4c83-adfc-8230d1e958c1.png">
+    
+<strong> Augusto Becker | acesar-l | 🇧🇷👨‍🚀</strong>
+    
+:wave: How to reach me: 
+    
+  <a href = "mailto:augustobecker.dev@gmail.com"><img src="https://img.shields.io/badge/augustobecker.dev@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"> </a>
+  <a href="https://www.linkedin.com/in/augusto-becker/" target="_blank"><img src="https://img.shields.io/badge/-Augusto Becker-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="https://www.instagram.com/augusto.becker/" target="_blank"><img src="https://img.shields.io/badge/-augusto.becker-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
 </div>
