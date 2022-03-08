@@ -180,12 +180,12 @@ Those are the my Libft's functions today - some of them are not part of the subj
 <h2 align="center" id="how-does-it-work"> How does it work? </h2>
 
 The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files.
-These files are compiled into objects (.o) to be later inserted in the library, we do this just by compiling with the -c flag.
+These files are compiled into objects (.o) to be later inserted in the library, we do this just by compiling with the -c and -o flags.
 
-      clang -c example1.c example1.o
-      clang -c example2.c example2.o
-      clang -c example3.c example3.o
-      clang -c example4.c example4.o
+      clang -c example1.c -o example1.o
+      clang -c example2.c -o example2.o
+      clang -c example3.c -o example3.o
+      clang -c example4.c -o example4.o
 And then using ar rcs command to create the library with all the objects.
 
       ar rcs libft.a example1.o example2.o example3.o example4.o
