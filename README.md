@@ -41,8 +41,6 @@ The project is divided in three parts - Part I, Part II and Bonus.
 #### Bonus.
 >In this Bonus part, you must code a set of functions that are useful to manipulate lists.
 
-	
-	
 <p align="center">• lstnew • lstadd_front • lstsize • lstlast • lstadd_back • lstdelone • lstclear • lstiter • lstmap</p>
 
  <h2 align="center" id="requirements"> Requirements </h2>
@@ -77,99 +75,97 @@ to any project where it's specified. These are some of them:
 
 ### Functions from <ctype.h>
 	
-• <a href="">ft_isalpha</a> - checks for an alphabetic character
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isalpha.c">ft_isalpha</a> - checks for an alphabetic character
 	
-• <a href="">ft_isdigit</a> - checks for a digit (0 through 9).
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isdigit.c">ft_isdigit</a> - checks for a digit (0 through 9).
 	
-• <a href="">ft_isalnum</a> - checks for an alphanumeric character
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isalnum.c">ft_isalnum</a> - checks for an alphanumeric character
 	
-• <a href="">ft_isascii</a> - checks whether c fits into the ASCII character set
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isascii.c">ft_isascii</a> - checks whether c fits into the ASCII character set
 	
-• <a href="">ft_isprint</a> - checks for any printable character
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isprint.c">ft_isprint</a> - checks for any printable character
 	
-• <a href="">ft_toupper</a> - convert char to uppercase
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_toupper.c">ft_toupper</a> - convert char to uppercase
 	
-• <a href="">ft_tolower</a> - convert char to lowercase
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_tolower.c">ft_tolower</a> - convert char to lowercase
 	
 ### Functions from <string.h>
 	
-• <a href="">ft_memset</a> - fill memory with a constant byte
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memset.c">ft_memset</a> - fill memory with a constant byte
 	
-• <a href="">ft_strlen</a> - calculate the length of a string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strlen.c">ft_strlen</a> - calculate the length of a string
 	
-• <a href="">ft_bzero</a> - zero a byte string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_bzero.c">ft_bzero</a> - zero a byte string
 	
-• <a href="">ft_memcpy</a> - copy memory area
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memcpy.c">ft_memcpy</a> - copy memory area
 	
-• <a href="">ft_memmove</a> - copy memory area
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memmove.c">ft_memmove</a> - copy memory area
 	
-• <a href="">ft_strlcpy</a> - copy string to an specific size
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strlcpy.c">ft_strlcpy</a> - copy string to an specific size
 	
-• <a href="">ft_strlcat</a> - concatenate string to an specific size
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strlcat.c">ft_strlcat</a> - concatenate string to an specific size
 	
-• <a href="">ft_strchr</a> - locate character in string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strchr.c">ft_strchr</a> - locate character in string
 	
-• <a href="">ft_strrchr</a> - locate character in string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strrchr.c">ft_strrchr</a> - locate character in string
 	
-• <a href="">ft_strncmp</a> - compare two strings
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strncmp.c">ft_strncmp</a> - compare two strings
 	
-• <a href="">ft_memchr</a> - scan memory for a character
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memchr.c">ft_memchr</a> - scan memory for a character
 	
-• <a href="">ft_memcmp</a> - compare memory areas
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memcmp.c">ft_memcmp</a> - compare memory areas
 	
-• <a href="">ft_strnstr</a> - locate a substring in a string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strnstr.c">ft_strnstr</a> - locate a substring in a string
 	
-• <a href="">ft_strdup</a> - creates a dupplicate for the string passed as parameter
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strdup.c">ft_strdup</a> - creates a dupplicate for the string passed as parameter
 	
 ### Functions from <stdlib.h>
 	
-• <a href="">ft_atoi</a> - convert a string to an integer
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_atoi.c">ft_atoi</a> - convert a string to an integer
 	
-• <a href="">ft_calloc</a> - allocates memory and sets its bytes' values to 0
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_calloc.c">ft_calloc</a> - allocates memory and sets its bytes' values to 0
 	
 ### Non-standard functions
 	
-• <a href="">ft_substr</a> - returns a substring from a string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_substr.c">ft_substr</a> - returns a substring from a string
 	
-• <a href="">ft_strjoin</a> - concatenates two strings
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strjoin.c">ft_strjoin</a> - concatenates two strings
 	
-• <a href="">ft_strtrim</a> - trims the beginning and end of string with specific set of chars
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strtrim.c">ft_strtrim</a> - trims the beginning and end of string with specific set of chars
 	
-• <a href="">ft_split</a> - splits a string using a char as parameter
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_split.c">ft_split</a> - splits a string using a char as parameter
 	
-• <a href="">ft_itoa</a> - converts a number into a string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_itoa.c">ft_itoa</a> - converts a number into a string
 	
-• <a href="">ft_strmapi</a> - applies a function to each character of a string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strmapi.c">ft_strmapi</a> - applies a function to each character of a string
 	
-• <a href="">ft_striteri</a> - applies a function to each character of a string
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_striteri.c">ft_striteri</a> - applies a function to each character of a string
 	
-• <a href="">ft_putchar_fd</a> - output a char to a file descriptor
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_putchar_fd.c">ft_putchar_fd</a> - output a char to a file descriptor
 	
-• <a href="">ft_putstr_fd</a> - output a string to a file descriptor
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_putstr_fd.c">ft_putstr_fd</a> - output a string to a file descriptor
 	
-• <a href="">ft_putendl_fd</a> - output a string to a file descriptor, followed by a new line
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_putendl_fd.c">ft_putendl_fd</a> - output a string to a file descriptor, followed by a new line
 	
-• <a href="">ft_putnbr_fd</a> - output a number to a file descriptor
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_putnbr_fd.c">ft_putnbr_fd</a> - output a number to a file descriptor
 	
 ### Linked list functions
 	
-• <a href="">ft_lstnew</a> - creates a new list element
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstnew.c">ft_lstnew</a> - creates a new list element
 	
-• <a href="">ft_lstadd_front</a> - adds an element at the beginning of a list
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstadd_front.c">ft_lstadd_front</a> - adds an element at the beginning of a list
 	
-• <a href="">ft_lstsize</a> - counts the number of elements in a list
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstsize.c">ft_lstsize</a> - counts the number of elements in a list
 	
-• <a href="">ft_lstlast</a> - returns the last element of the list
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstlast.c">ft_lstlast</a> - returns the last element of the list
 	
-• <a href="">ft_lstadd_back</a> - adds an element at the end of a list
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstadd_back.c">ft_lstadd_back</a> - adds an element at the end of a list
 	
-• <a href="">ft_lstclear</a> - deletes and free list
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstclear.c">ft_lstclear</a> - deletes and free list
 	
-• <a href="">ft_lstiter</a> - applies a function to each element of a list
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstiter.c">ft_lstiter</a> - applies a function to each element of a list
 	
-• <a href="">ft_lstmap </a> - applies a function to each element of a list
-	
-
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstmap.c">ft_lstmap </a> - applies a function to each element of a list
 	
 <h2 align="center" id="how-does-it-work"> How does it work? </h2>
 
