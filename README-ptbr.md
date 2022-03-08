@@ -9,6 +9,7 @@
 
 ## Índice
 * [O que é Libft?](#o-que-e-libft)
+* [Funções](#funcoes)
 * [Requisitos](#requisitos)
 * [Como funciona?](#como-funciona)
 * [Como eu uso a Biblioteca?](#como-eu-uso-a-biblioteca)
@@ -19,6 +20,28 @@
 
  O Primeiro projeto na 42. Consiste em uma biblioteca estática em C com funções padrão da linguagem recodificadas que rodam e compilam usando um Makefile.
  A biblioteca pode ser usada de apoio em projetos futuros, uma vez que não é permitido o uso das funções originais.
+ eUma vez que tenha terminado o projeto, você pode (e deve) incluir mais funções à sua Libft. Por exemplo, agora os projetos <a href="https://github.com/augustobecker/get_next_line">get_next_line</a> e <a href="https://github.com/augustobecker/ft_printf">ft_printf</a> são parte da minha biblioteca.
+	
+O projeto é dividio em três partes - Parte I, Parte II e Bônus.
+
+#### Parte I.
+ 
+>Nessa primeira parte, você deve recodificar um conjunto de funções da libc, como definidas em seu manual (man).
+>Suas funções precisam apresentar o mesmo protótipo e compartamento das originais. Além disso o nome das funções devem apresenar o prefixo “ft_”. Por exemplon, a strlen se torna
+>ft_strlen. **ft_ vem de forty-two(42).
+	
+<p align="center">• isalpha • isdigit • isalnum • isascii • isprint • strlen • memset • bzero • memcpy • memmove • strlcpy • strlcat • toupper • tolower • strchr • strrchr • strncmp • memchr • memcmp • strnstr • atoi • calloc • strdup</p>
+ 
+#### Parte II.
+>Nessa segunda parte, você deve codar um punhado de funções que ou não estão inclusas na libc ou 
+>foram incluídas de uma forma. Algumas dessas funções podem ser úteis para escrever as funções da parte I.
+
+<p align="center">• substr • strjoin • strtrim • split • itoa • strmapi • striteri • putchar_fd • putstr_fd • putendl_fd • putnbr_fd</p>
+	
+#### Bônus.
+>Na parte Bônus, você deve codificar funções para manipulação de listas encadeadas.
+ 
+ <p align="center">• lstnew • lstadd_front • lstsize • lstlast • lstadd_back • lstdelone • lstclear • lstiter • lstmap</p>
  
  <h2 align="center" id="requisitos"> Requisitos </h2>
 
@@ -46,7 +69,113 @@ A Norma é um padrão de programação que define um conjunto de regras a seguir
     Usar o comando libtool para criar a biblioteca é proibido.
     
     O Makefile deve compilar com as flags -Wall, -Wextra e -Werror
-  
+ 
+ <h2 align="center" id="funcoes"> Funções </h2>
+ 
+ Essas são as funções presentes na minha Libft atualmente - algumas não fazem parte do subject - já que podemos posteriormente adicionar funções para usar em outros projetos.
+ 
+### Funções da <ctype.h>
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isalpha.c">ft_isalpha</a> - checa se é um caractere alfabético.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isdigit.c">ft_isdigit</a> - checa se é um digito (0 a 9).
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isalnum.c">ft_isalnum</a> - checa se é um caractere alfanumérico.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isascii.c">ft_isascii</a> - checa se é um caractere que faz parte da tabela ASCII tradicional.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_isprint.c">ft_isprint</a> - checa se é um caractere printável.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_toupper.c">ft_toupper</a> - converte o caractere para maiúsculo.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_tolower.c">ft_tolower</a> - converte o caractere para minúsculo.
+	
+### Funções da <string.h>
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memset.c">ft_memset</a> - enche o bloco de memória com um mesmo byte.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strlen.c">ft_strlen</a> - calcula o tamanho de uma string.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_bzero.c">ft_bzero</a> - preenche uma string com zero.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memcpy.c">ft_memcpy</a> - copia uma área de memória.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memmove.c">ft_memmove</a> - copia uma área de memória.
+ 
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strlcpy.c">ft_strlcpy</a> - copia uma string para um tamanho especificado.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strlcat.c">ft_strlcat</a> - concatena uma string para um um tamanho especificado.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strchr.c">ft_strchr</a> - localiza a primeira ocorrência de um caractere em uma string.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strrchr.c">ft_strrchr</a> - localiza a última ocorrência de um caractere em uma string.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strncmp.c">ft_strncmp</a> - compara duas strings.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memchr.c">ft_memchr</a> - checa um bloco de memória em busca de um caractere.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_memcmp.c">ft_memcmp</a> - compara blocos de memória.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strnstr.c">ft_strnstr</a> - localiza uma substring dentro de uma string.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strdup.c">ft_strdup</a> - cria uma duplicata da string passada como parâmetro.
+	
+### Funções da <stdlib.h>
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_atoi.c">ft_atoi</a> - converte uma string para um inteiro.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_calloc.c">ft_calloc</a> - alloca memória e seta o valor de todos os bytes para 0.
+	
+### Funções não-padrão da linguagem
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_substr.c">ft_substr</a> - retorna uma substring de uma string.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strjoin.c">ft_strjoin</a> - retorna uma string que é a junção das duas strings passadas como parâmetro.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strtrim.c">ft_strtrim</a> - Corta o início e fim de uma string quando achada a sequência de caracteres passada.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_split.c">ft_split</a> - separa uma string em várias substrings delimitadas por um caractere.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_itoa.c">ft_itoa</a> - converte um número em string.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_strmapi.c">ft_strmapi</a> - aplica uma função a cada caractere de uma string.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_striteri.c">ft_striteri</a> - aplica uma função a cada caractere de uma string.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_putchar_fd.c">ft_putchar_fd</a> - da como output um caratere para um file descriptor.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_putstr_fd.c">ft_putstr_fd</a> - da como output uma string para um file descriptor.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_putendl_fd.c">ft_putendl_fd</a> - da como output uma string para um file descriptor, seguido por uma nova linha.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_putnbr_fd.c">ft_putnbr_fd</a> - da como output um número para um file descriptor.
+	
+### Funções para Listas Encadeadas 
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstnew.c">ft_lstnew</a> - cria um novo elemento para a lista.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstadd_front.c">ft_lstadd_front</a> - adiciona um elemento no início de uma lista.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstsize.c">ft_lstsize</a> - counta o número de elementos em uma lista.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstlast.c">ft_lstlast</a> - retorna o último elemento de uma lista.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstadd_back.c">ft_lstadd_back</a> - adiciona um elemento ao fim de uma lista.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstclear.c">ft_lstclear</a> - deleta e da free em uma lista.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstiter.c">ft_lstiter</a> - aplica uma função a cada elemento de uma lista.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstmap.c">ft_lstmap </a> - aplica uma função a cada elemento de uma lista.
+
+ ### Funções da get_next_line (Segundo projeto da 42)
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/get_next_line.c">get_next_line</a> - lê qualquer arquivo válido linha por linha.
+ 
+ ### Funções da ft_printf (Terceiro projeto da 42)
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_printf.c">ft_printf</a> - imprime uma string formatada em alguma saída do sistema.
+ 
 <h2 align="center" id="como-funciona"> Como funciona? </h2>
 
 O funcionamento da biblioteca pode ser explicado apenas desmembrando o Makefile. As funções da biblioteca estão todas em arquivos .c.
