@@ -34,7 +34,7 @@ O projeto é dividio em três partes - Parte I, Parte II e Bônus.
  
 #### Parte II.
 >Nessa segunda parte, você deve codar um punhado de funções que ou não estão inclusas na libc ou 
->foram incluídas de uma forma. Algumas dessas funções podem ser úteis para escrever as funções da parte I.
+>foram incluídas de uma outra forma. Algumas dessas funções podem ser úteis para escrever as funções da parte I.
 
 <p align="center">• substr • strjoin • strtrim • split • itoa • strmapi • striteri • putchar_fd • putstr_fd • putendl_fd • putnbr_fd</p>
 	
@@ -179,12 +179,12 @@ A Norma é um padrão de programação que define um conjunto de regras a seguir
 <h2 align="center" id="como-funciona"> Como funciona? </h2>
 
 O funcionamento da biblioteca pode ser explicado apenas desmembrando o Makefile. As funções da biblioteca estão todas em arquivos .c.
-Estes arquivos são compilados em objetos (.o) para serem depois inseridos na biblioteca, fazemos isso apenas compilando com a flag -c.
+Estes arquivos são compilados em objetos (.o) para serem depois inseridos na biblioteca, fazemos isso apenas compilando com as flags -c e -o.
 
-    clang -c exemplo1.c exemplo1.o
-    clang -c exemplo2.c exemplo2.o
-    clang -c exemplo3.c exemplo3.o
-    clang -c exemplo4.c exemplo4.o
+    clang -c exemplo1.c -o exemplo1.o
+    clang -c exemplo2.c -o exemplo2.o
+    clang -c exemplo3.c -o exemplo3.o
+    clang -c exemplo4.c -o exemplo4.o
 E então usando o comando ar rcs para criar a biblioteca com todos os objetos.
 
     ar rcs libft.a exemplo1.o exemplo2.o exemplo3.o exemplo4.o
