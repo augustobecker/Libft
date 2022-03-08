@@ -6,7 +6,7 @@
 #    By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/07 17:02:42 by acesar-l          #+#    #+#              #
-#    Updated: 2022/03/06 12:17:31 by acesar-l         ###   ########.fr        #
+#    Updated: 2022/03/08 12:17:31 by acesar-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -90,24 +90,27 @@ BONUS_OBJS 	= $(BONUS_SRCS:.c=.o)
 all:		${NAME}
 
 ${NAME}: 	${OBJS}
-		ar rcs ${NAME} ${OBJS}
-		@echo "$(NAME): $(GREEN)$(NAME) was created$(RESET)"
+		@echo "\n$(NAME): $(GREEN)$(NAME) was created$(RESET)"
+		ar -rcs ${NAME} ${OBJS}
 
 bonus:		${NAME} ${BONUS_OBJS}
-		ar rcs ${NAME} ${BONUS_OBJS}
-		@echo "$(NAME): $(GREEN)$(NAME) was created with Bonus$(RESET)"
+		@echo "\n$(NAME): $(GREEN)$(NAME) was created with Bonus$(RESET)"
+		ar -rcs ${NAME} ${BONUS_OBJS}
+		@echo
 
 .c.o:
-		${CC} ${FLAGS} -c $< -o ${<:.c=.o}
 		@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
+		${CC} ${FLAGS} -c $< -o ${<:.c=.o} ${INCLUDE}
 
 clean:
+		@echo "\n$(NAME): $(RED)object files were deleted$(RESET)"
 		${REMOVE} ${OBJS} ${BONUS_OBJS}
-		@echo "$(NAME): $(RED)object files were deleted$(RESET)"
+		@echo
 
 fclean:		clean
-		${REMOVE} ${NAME}
 		@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
+		${REMOVE} ${NAME}
+		@echo
 
 re :		fclean all
 
