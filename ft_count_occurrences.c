@@ -10,24 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_occurrences(char **str, char c, int array_len)
+int	ft_count_occurrences(char *str, char c)
 {
 	int	occurrences;
 	int	i;
-	int	nbr_str;
 
 	i = 0;
-	nbr_str = 0;
 	occurrences = 0;
-	while (nbr_str <= array_len)
+	while (str[i])
 	{
-		while (str[nbr_str][i])
-		{
-			if (str[nbr_str][i] == c)
-				occurrences++;
-			i++;
-		}
-		nbr_str++;
+		if (str[i] == c)
+			occurrences++;
+		i++;
 	}
 	return (occurrences);
 }
