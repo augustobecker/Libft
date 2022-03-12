@@ -177,6 +177,34 @@ Those are the my Libft's functions today - some of them are not part of the subj
 	
 • <a href="https://github.com/augustobecker/Libft/blob/master/ft_printf.c">ft_printf</a> - output a formatted string in stdout.
 	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_c.c">ft_argument_c</a> - output a char in stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_arguments_d_i.c">ft_arguments_d_i</a> - output an integer number in stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_p.c">ft_argument_p</a> - output a memory address(a hexadecimal) in stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_percent.c">ft_argument_percent</a> - output an percent sign in stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_s.c">ft_argument_s</a> - output a string in stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_u.c">ft_argument_u</a> - output an unsigned integer in stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_arguments_x.c">ft_arguments_x</a> - output a hexadecimal number in stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_decimal_length.c">ft_decimal_length</a> - returns the length of a decimal number.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_free_ptr.c">ft_free_ptr</a> - free memory for a pointer and set its value to null.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_decimal_converter_to_hex.c">ft_decimal_converter_to_hex</a> - converts a decimal number to hexadecimal.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_hex_length.c">ft_hex_length</a> - returns the length of a hexadecimal number.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_print_reversed_str.c">ft_print_reversed_str</a> - print an inverted string.
+	
+ ### Useful Functions
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_count_occurrences.c">ft_count_occurrences</a> - returns the number of occurrences of a char in a string.
+	
 <h2 align="center" id="how-does-it-work"> How does it work? </h2>
 
 The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files.
