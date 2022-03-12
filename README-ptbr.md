@@ -175,6 +175,35 @@ A Norma é um padrão de programação que define um conjunto de regras a seguir
  ### Funções da ft_printf (Terceiro projeto da 42)
 	
 • <a href="https://github.com/augustobecker/Libft/blob/master/ft_printf.c">ft_printf</a> - imprime uma string formatada em alguma saída do sistema.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_c.c">ft_argument_c</a> - printa um char no stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_arguments_d_i.c">ft_arguments_d_i</a> - printa um número inteiro no stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_p.c">ft_argument_p</a> - printa um endereço de memória (hexadecimal) no stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_percent.c">ft_argument_percent</a> - printa um sinal de porcentagem no stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_s.c">ft_argument_s</a> - printa uma string no stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_argument_u.c">ft_argument_u</a> - printa um unsigned int no stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_arguments_x.c">ft_arguments_x</a> -  printa um número hexadecimal no stdout.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_decimal_length.c">ft_decimal_length</a> - retorna o tamanho de um número decimal.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_free_ptr.c">ft_free_ptr</a> - libera a memória e seta seu valor para nulo.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_decimal_converter_to_hex.c">ft_decimal_converter_to_hex</a> - converte um número decimal em hexadecimal 
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_hex_length.c">ft_hex_length</a> - retorna o tamanho de um número hexadecimal.
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_print_reversed_str.c">ft_print_reversed_str</a> - printa uma string ao contrário.
+	
+ ### Useful Functions
+	
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_count_occurrences.c">ft_count_occurrences</a> - retuorna o número de ocorrências de um char em uma string.
+	
  
 <h2 align="center" id="como-funciona"> Como funciona? </h2>
 
