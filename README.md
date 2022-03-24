@@ -13,6 +13,7 @@
 * [Functions](#functions)
 * [Makefile](#makefile)
 	* [Colorful Makefile](#colorful-makefile)
+* [How does it work?](#how-does-it-work)
 * [How do I use the library?](#how-do-i-use-the-library)
 * [How do I test it?](#how-do-i-test-it)
 * [Author](#author)
@@ -302,9 +303,8 @@ Cool, right?
 	
 Remember to reset the color when you're done, otherwise your terminal will keep with the last used colour.
 
-
-#
-
+<h2 align="center" id="how-does-it-work"> How does it work? </h2>
+	
 The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files.
 These files are compiled into objects (.o) to be later inserted in the library, we do this just by compiling with the -c and -o flags.
 
