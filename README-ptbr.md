@@ -9,8 +9,10 @@
 
 ## Índice
 * [O que é Libft?](#o-que-e-libft)
-* [Funções](#funcoes)
 * [Requisitos](#requisitos)
+* [Funções](#funcoes)
+* [Makefile](#makefile)
+	* [Makefile Colorido](#makefile-colorido)
 * [Como funciona?](#como-funciona)
 * [Como eu uso a Biblioteca?](#como-eu-uso-a-biblioteca)
 * [Como eu testo?](#como-eu-testo)
@@ -203,6 +205,105 @@ A Norma é um padrão de programação que define um conjunto de regras a seguir
  ### Useful Functions
 	
 • <a href="https://github.com/augustobecker/Libft/blob/master/ft_count_occurrences.c">ft_count_occurrences</a> - retuorna o número de ocorrências de um char em uma string.
+
+	
+<h2 align="center" id="makefile"> Makefile </h2>
+
+<p align="center">:information_source: Uma ferramenta de automacão para rodar e compilar seus programas com maior eficiência.	</p>
+
+Um Makefile define uma série de tarefas para serem executadas em shell script. Essas tarefas são escritas em um target nesse formato:
+	
+	target: pré-requisitos
+	<TAB> receita
+
+como em:
+	
+	fclean:	clean
+		@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
+		${REMOVE} ${NAME}
+		@echo
+
+A receita (os comandos @echo e por ai vai) para o target fclean só vai ser executada quando o target clean (o pré-requisito) for executado.
+Um target funciona sem pré-requisito também:
+	
+	clean:
+		@echo "\n$(NAME): $(RED)object files were deleted$(RESET)"
+		${REMOVE} ${OBJS} ${BONUS_OBJS}
+		@echo
+	
+Como você pode ver, há algumas variáveis dentro da receita. As variáveis no Makefile podem ser criadas e atribuídas assim:
+	
+	GREEN		= \033[0;32m
+	RED		= \033[0;31m
+	RESET		= \033[0m
+	CC		= clang
+	FLAGS 		= -Wall -Werror -Wextra
+
+Para usar o valor da variável apenas digite o nome com o sinal de $:
+	
+	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
+
+Usar variáveis faz o seu Makefile mais legível e facil de alterar.
+	
+Não é necessário que o target seja um arquivo como em $(NAME). Pode ser apenas o nome da receita, como acima. Chamamos esses targets 
+de phony targets.
+
+Se você tiver um arquivo com o exato nome da sua phony target, as coisas podem ficar um pouco estranhas
+Para proteger seu Makefile disso, apenas use phony e o nome de todos os seus phony targets usados:
+	
+	.PHONY:		all clean fclean re bonus
+
+Aqui na 42, o subject diz que:
+>Your Makefile must at least contain the rules $(NAME), all, clean, fclean and re.
+	
+As regras são target, é só nomear como $(NAME), all, clean, fclean e re.
+
+	
+A regra **$(NAME)**, nesse caso, deveria criar a biblioteca estática **$(NAME)**.
+	
+**all** é usado para o principal objetivo do seu Makefile: criar a biblioteca estática **$(NAME)**.
+	
+**clean** remove os objetos criados para fazer a biblioteca.
+	
+**fclean** remove os objetos criados para fazer a biblioteca e a biblioteca estática **$(NAME)**.
+	
+**re** apenas remove os objetos criados para fazer a biblioteca e a biblioteca estática **$(NAME)**, para então recompilar tudo.
+
+Você pode rodar uma regra do seu Makefile nesse modelo:
+
+	make $(nome_regra)
+	
+Assim:
+	
+	make clean
+
+No caso do target all, só digite make
+	
+	make
+
+<h3 align="center" id="makefile-colorido"> Makefile Colorido </h3>
+
+Escolha uma cor, adicone como variável e use no seu Makefile:
+
+	BLACK		="\[\033[0;30m\]"        
+	RED		="\[\033[0;31m\]"       
+	GREEN		="\[\033[0;32m\]"      
+	YELLOW		="\[\033[0;33m\]"       
+	BLUE		="\[\033[0;34m\]"        
+	PURPLE		="\[\033[0;35m\]"     
+	CYAN		="\[\033[0;36m\]"         
+	WHITE		="\[\033[0;37m\]"    
+	RESET		="\033[0m"
+
+Você pode usar assim:
+	
+	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
+	
+E então $(NAME) was deleted será printada em vermelho no terminal.
+
+Maneiro, né?
+
+Lembre de resetar a cor quando terminar de usar uma cor, de contrário o terminal ficará da cor da última cor usada.
 	
  
 <h2 align="center" id="como-funciona"> Como funciona? </h2>
