@@ -22,7 +22,7 @@
 
  O Primeiro projeto na 42. Consiste em uma biblioteca estática em C com funções padrão da linguagem recodificadas que rodam e compilam usando um Makefile.
  A biblioteca pode ser usada de apoio em projetos futuros, uma vez que não é permitido o uso das funções originais.
- eUma vez que tenha terminado o projeto, você pode (e deve) incluir mais funções à sua Libft. Por exemplo, agora os projetos <a href="https://github.com/augustobecker/get_next_line">get_next_line</a> e <a href="https://github.com/augustobecker/ft_printf">ft_printf</a> são parte da minha biblioteca.
+ Uma vez que tenha terminado o projeto, você pode (e deve) incluir mais funções à sua Libft. Por exemplo, agora os projetos <a href="https://github.com/augustobecker/get_next_line">get_next_line</a> e <a href="https://github.com/augustobecker/ft_printf">ft_printf</a> são parte da minha biblioteca.
 	
 O projeto é dividio em três partes - Parte I, Parte II e Bônus.
 
@@ -204,7 +204,7 @@ A Norma é um padrão de programação que define um conjunto de regras a seguir
 	
  ### Useful Functions
 	
-• <a href="https://github.com/augustobecker/Libft/blob/master/ft_count_occurrences.c">ft_count_occurrences</a> - retuorna o número de ocorrências de um char em uma string.
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_count_occurrences.c">ft_count_occurrences</a> - retorna o número de ocorrências de um char em uma string.
 
 	
 <h2 align="center" id="makefile"> Makefile </h2>
@@ -248,7 +248,8 @@ Usar variáveis faz o seu Makefile mais legível e facil de alterar.
 Não é necessário que o target seja um arquivo como em $(NAME). Pode ser apenas o nome da receita, como acima. Chamamos esses targets 
 de phony targets.
 
-Se você tiver um arquivo com o exato nome da sua phony target, as coisas podem ficar um pouco estranhas
+Se você tiver um arquivo com o exato nome da sua phony target, as coisas podem ficar um pouco estranhas.
+
 Para proteger seu Makefile disso, apenas use phony e o nome de todos os seus phony targets usados:
 	
 	.PHONY:		all clean fclean re bonus
@@ -299,7 +300,7 @@ Você pode usar assim:
 	
 	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
 	
-E então $(NAME) was deleted será printada em vermelho no terminal.
+E então "$(NAME) was deleted" será printada em vermelho no terminal.
 
 Maneiro, né?
 
