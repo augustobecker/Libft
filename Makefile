@@ -6,7 +6,7 @@
 #    By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/07 17:02:42 by acesar-l          #+#    #+#              #
-#    Updated: 2022/03/08 12:17:31 by acesar-l         ###   ########.fr        #
+#    Updated: 2022/03/04 12:17:31 by acesar-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -101,7 +101,7 @@ bonus:		${NAME} ${BONUS_OBJS}
 
 .c.o:
 		@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
-		${CC} ${FLAGS} -c $< -o ${<:.c=.o} ${INCLUDE}
+		${CC} ${FLAGS} -c $< -o ${<:.c=.o}
 
 clean:
 		@echo "\n$(NAME): $(RED)object files were deleted$(RESET)"
