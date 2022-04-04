@@ -16,6 +16,7 @@
 * [How does it work?](#how-does-it-work)
 * [How do I use the library?](#how-do-i-use-the-library)
 * [How do I test it?](#how-do-i-test-it)
+* [42 Cursus](#42-cursus)
 * [Author](#author)
 
 <h2 align="center" id="what-is-libft"> What is Libft? </h2>
@@ -372,6 +373,10 @@ Go into the test folder and run the mandatory test and then the bonus test:
 If you did everything correctly you should see something like this:
 ![image](https://user-images.githubusercontent.com/81205527/149175403-68b2b73b-5669-45ff-a874-e95055abe0e3.png)
 
+<h2 align="center" id="42-cursus"> 42 Cursus </h2>
+	
+You can see other projets at 42 here: <a href="https://github.com/augustobecker/42cursus">42 Cursus </a>
+	
 <h2 align="center" id="author"> Author </h2>
 <div>
     <img height="180em" src="https://user-images.githubusercontent.com/81205527/152089472-0aa06bd9-d882-4c83-adfc-8230d1e958c1.png">
