@@ -16,6 +16,7 @@
 * [Como funciona?](#como-funciona)
 * [Como eu uso a Biblioteca?](#como-eu-uso-a-biblioteca)
 * [Como eu testo?](#como-eu-testo)
+* [42 Cursus](#42-cursus)
 * [Autor](#autor) 
  
 <h2 align="center" id="o-que-e-libft"> O que é Libft? </h2>
@@ -376,6 +377,10 @@ Entre na pasta do Tester e rode o teste mandatório e então o bônus:
 Se você fez tudo corretamente, deve ver algo como isso:
 ![image](https://user-images.githubusercontent.com/81205527/149175403-68b2b73b-5669-45ff-a874-e95055abe0e3.png)
 
+<h2 align="center" id="42-cursus"> 42 Cursus </h2>
+	
+Você pode encontrar outros projetos feitos por mim na 42 aqui: <a href="https://github.com/augustobecker/42cursus">42 Cursus </a>	
+	
  <h2 align="center" id="autor"> Autor </h2>
 <div>
     <img height="180em" src="https://user-images.githubusercontent.com/81205527/152089472-0aa06bd9-d882-4c83-adfc-8230d1e958c1.png">
