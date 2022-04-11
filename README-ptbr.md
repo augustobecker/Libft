@@ -379,7 +379,22 @@ Se você fez tudo corretamente, deve ver algo como isso:
 
 <h2 align="center" id="42-cursus"> 42 Cursus </h2>
 	
-Você pode encontrar outros projetos feitos por mim na 42 aqui: <a href="https://github.com/augustobecker/42cursus">42 Cursus </a>	
+A 42 é uma iniciativa educacional global que propõe uma nova forma de aprender tecnologia: sem professores, sem salas de aula,
+estudantes aprendendo com seus colegas estudantes (Aprendizado peer to peer),
+com uma metodologia que desenvolve habilidades de computação e da vida.
+Sem mencionar que é completamente gratuita e aberta para todos, sem pré-requisitos. 
+    
+As admissões na 42 são diferentes de outras escolas. Usamos um processo de admissão baseado em mérito.
+O passo final no processo é a Piscina - parte parte do processo seletivo que requer 4 semanas de código intenso e imersivo.
+Não é necessário experiência anterior em programação.
+    
+Você pode conferir mais sobre o processo de admissão no site da 42sp: https://www.42sp.org.br
+    
+ou no meu repositório do github: <a href="https://github.com/augustobecker/42sp_Piscine">42 Piscine</a>
+
+Para ver outros projetos da 42 desenvolvidos por mim, clique aqui: <a href="https://github.com/augustobecker/42cursus">42 Cursus </a>
+
+    	
 	
  <h2 align="center" id="autor"> Autor </h2>
 <div>
