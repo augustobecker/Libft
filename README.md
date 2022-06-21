@@ -388,7 +388,7 @@ You can check more about the admission process on the 42sp website: https://www.
 
 To see other projects developed by me at 42, click here: <a href="https://github.com/augustobecker/42cursus">42 Cursus </a>
 	
-<h2  align="center">Author</h2>
+<h2  align="center" id="author">Author</h2>
 <div align="center">
 	<div>
 	<img height="200em" src="https://user-images.githubusercontent.com/81205527/174709160-f4bc029d-b667-469b-b2a7-4e036f1c5349.png">
