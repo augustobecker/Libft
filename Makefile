@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: acesar-l <acesar-l@student.42sp.org>       +#+  +:+       +#+         #
+#    By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/07 17:02:42 by acesar-l          #+#    #+#              #
-#    Updated: 2022/03/04 12:17:31 by acesar-l         ###   ########.fr        #
+#    Updated: 2022/06/26 17:28:55 by acesar-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -113,6 +113,6 @@ fclean:		clean
 		${REMOVE} ${NAME}
 		@echo
 
-re :		fclean all
+rebonus:	fclean bonus
 
-.PHONY:		all clean fclean re bonus
+.PHONY:		all clean fclean re bonus rebonus
