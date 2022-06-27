@@ -174,7 +174,7 @@ Those are the my Libft's functions today - some of them are not part of the subj
 	
  ### get_next_line (2nd Project at 42)
 	
-• <a href="https://github.com/augustobecker/Libft/blob/master/get_next_line.c">get_next_line</a> - lê qualquer arquivo válido linha por linha.
+• <a href="https://github.com/augustobecker/Libft/blob/master/get_next_line.c">get_next_line</a> -  reads any valid file line by line.
  
  ### Functions from "ft_printf.h" (3rd Project at 42)
 	
