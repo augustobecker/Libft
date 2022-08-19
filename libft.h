@@ -71,6 +71,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 int	ft_count_occurrences(char *str, char c);
+void	free_str_array(char **array);
 
 char	*get_next_line(int fd);
 
