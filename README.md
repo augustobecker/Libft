@@ -208,6 +208,8 @@ Those are the my Libft's functions today - some of them are not part of the subj
 	
 • <a href="https://github.com/augustobecker/Libft/blob/master/ft_count_occurrences.c">ft_count_occurrences</a> - returns the number of occurrences of a char in a string.
 
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_free_str_array.c">ft_free_str_array</a> - free memory from an array of strings.
+
 <h2 align="center" id="makefile"> Makefile </h2>
 
 <p align="center">:information_source: A handy automation tool to Run and compile your programs more efficiently.	</p>
