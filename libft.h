@@ -6,7 +6,7 @@
 /*   By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:53:29 by acesar-l          #+#    #+#             */
-/*   Updated: 2022/08/22 18:32:26 by acesar-l         ###   ########.fr       */
+/*   Updated: 2022/08/22 19:11:57 by acesar-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,14 @@
 # include <unistd.h>
 # include <stdarg.h>
 
+# define GREY 		"\033[0;90m"
+# define RED		"\033[0;31m"
+# define RESET 		"\033[0m"
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE	100
+# endif
+
 typedef enum e_bool
 {
 	false,
@@ -24,13 +32,9 @@ typedef enum e_bool
 
 typedef struct s_list
 {
-	void		*content;
+	void			*content;
 	struct s_list	*next;
 }	t_list;
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100
-# endif
 
 int	ft_isalpha(int argument);
 int	ft_isdigit(int argument);
