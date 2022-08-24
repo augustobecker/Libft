@@ -154,7 +154,7 @@ Those are the my Libft's functions today - some of them are not part of the subj
 	
 • <a href="https://github.com/augustobecker/Libft/blob/master/ft_putnbr_fd.c">ft_putnbr_fd</a> - output a number to a file descriptor.
 	
-### Linked list functions
+### Linked list functions [Updated to support Doubly Linked Lists]
 	
 • <a href="https://github.com/augustobecker/Libft/blob/master/ft_lstnew.c">ft_lstnew</a> - creates a new list element.
 	
