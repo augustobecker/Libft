@@ -202,7 +202,7 @@ Those are the my Libft's functions today - some of them are not part of the subj
 	
 • <a href="https://github.com/augustobecker/Libft/blob/master/ft_hex_length.c">ft_hex_length</a> - returns the length of a hexadecimal number.
 	
-• <a href="https://github.com/augustobecker/Libft/blob/master/ft_print_reversed_str.c">ft_print_reversed_str</a> - print an inverted string.
+• <a href="https://github.com/augustobecker/Libft/blob/master/ft_print_reversed_str.c">ft_print_reversed_str</a> - print a string backwards.
 	
  ### Useful Functions
 	
