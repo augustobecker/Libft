@@ -6,113 +6,116 @@
 #    By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/07 17:02:42 by acesar-l          #+#    #+#              #
-#    Updated: 2022/06/26 17:28:55 by acesar-l         ###   ########.fr        #
+#    Updated: 2022/10/01 15:35:06 by acesar-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libft.a
 
 GREEN		= \033[0;32m
-RED		= \033[0;31m
+GREY		= \033[0;90m
+RED			= \033[0;31m
 RESET		= \033[0m
 
-CC 		= clang
+CC 			= clang
 
 FLAGS 		= -Wall -Werror -Wextra
 
 REMOVE 		= rm -f
 
-SRCS 		= ft_isalpha.c 			\
-		ft_isdigit.c 			\
-		ft_isalnum.c 			\
-		ft_isascii.c 			\
-		ft_isprint.c 			\
-		ft_strlen.c 			\
-		ft_memset.c 			\
-		ft_bzero.c 			\
-		ft_memcpy.c 			\
-		ft_memmove.c 			\
-		ft_strlcpy.c 			\
-		ft_strlcat.c 			\
-		ft_toupper.c 			\
-		ft_tolower.c 			\
-		ft_strchr.c 			\
-		ft_strrchr.c 			\
-		ft_strncmp.c			\
-		ft_memchr.c			\
-		ft_memcmp.c			\
-		ft_strnstr.c			\
-		ft_atoi.c 			\
-		ft_strdup.c 			\
-		ft_calloc.c 			\
-		ft_strnstr.c 			\
-		ft_itoa.c 			\
-		ft_substr.c	 		\
-		ft_split.c 			\
-		ft_strjoin.c 			\
-		ft_strtrim.c			\
-		ft_itoa.c 			\
-		ft_strmapi.c 			\
-		ft_striteri.c 			\
-		ft_putchar_fd.c 		\
-		ft_putstr_fd.c 			\
-		ft_putendl_fd.c 		\
-		ft_putnbr_fd.c			\
-		ft_count_occurrences.c		\
-		ft_free_str_array.c		\
-		get_next_line.c			\
-		ft_printf.c			\
-		ft_argument_c.c			\
-		ft_arguments_d_i.c		\
-		ft_argument_p.c			\
-		ft_argument_percent.c		\
-		ft_argument_s.c			\
-		ft_argument_u.c			\
-		ft_arguments_x.c		\
-		ft_print_reversed_str.c		\
-		ft_free_ptr.c			\
-		ft_hex_length.c			\
-		ft_decimal_length.c		\
-		ft_decimal_converter_to_hex.c
+INCLUDE		= -I ./standard_libft/
 
-BONUS_SRCS  	= ft_lstnew.c		\
-		ft_lstadd_front.c	\
-		ft_lstsize.c		\
-		ft_lstlast.c		\
-		ft_lstadd_back.c	\
-		ft_lstdelone.c		\
-		ft_lstclear.c		\
-		ft_lstiter.c		\
-		ft_lstmap.c
+SRCS 		= standard_libft/ft_isalpha.c 	\
+			standard_libft/ft_isdigit.c 	\
+			standard_libft/ft_isalnum.c 	\
+			standard_libft/ft_isascii.c 	\
+			standard_libft/ft_isprint.c 	\
+			standard_libft/ft_strlen.c 		\
+			standard_libft/ft_memset.c 		\
+			standard_libft/ft_bzero.c 		\
+			standard_libft/ft_memcpy.c 		\
+			standard_libft/ft_memmove.c 	\
+			standard_libft/ft_strlcpy.c 	\
+			standard_libft/ft_strlcat.c 	\
+			standard_libft/ft_toupper.c 	\
+			standard_libft/ft_tolower.c 	\
+			standard_libft/ft_strchr.c 		\
+			standard_libft/ft_strrchr.c 	\
+			standard_libft/ft_strncmp.c		\
+			standard_libft/ft_memchr.c		\
+			standard_libft/ft_memcmp.c		\
+			standard_libft/ft_strnstr.c		\
+			standard_libft/ft_atoi.c 		\
+			standard_libft/ft_strdup.c 		\
+			standard_libft/ft_calloc.c 		\
+			standard_libft/ft_strnstr.c 	\
+			standard_libft/ft_itoa.c 		\
+			standard_libft/ft_substr.c	 	\
+			standard_libft/ft_split.c 		\
+			standard_libft/ft_strjoin.c 	\
+			standard_libft/ft_strtrim.c		\
+			standard_libft/ft_itoa.c 		\
+			standard_libft/ft_strmapi.c 	\
+			standard_libft/ft_striteri.c 	\
+			standard_libft/ft_putstr_fd.c 	\
+			standard_libft/ft_putchar_fd.c 	\
+			standard_libft/ft_putstr_fd.c 	\
+			standard_libft/ft_putendl_fd.c 	\
+			standard_libft/ft_putnbr_fd.c	\
+			utils/ft_count_occurrences.c	\
+			utils/ft_free_ptr.c				\
+			utils/ft_free_str_array.c		\
+			get_next_line/get_next_line.c	\
+			ft_printf/ft_printf.c			\
+			ft_printf/ft_argument_c.c		\
+			ft_printf/ft_arguments_d_i.c	\
+			ft_printf/ft_argument_p.c		\
+			ft_printf/ft_argument_percent.c	\
+			ft_printf/ft_argument_s.c		\
+			ft_printf/ft_argument_u.c		\
+			ft_printf/ft_arguments_x.c		\
+			ft_printf/ft_free_ptr.c			\
+			ft_printf/ft_hex_length.c		\
+			ft_printf/ft_decimal_length.c	\
+			ft_printf/ft_print_reversed_str.c	\
+			ft_printf/ft_decimal_converter_to_hex.c
+
+BONUS_SRCS  	= standard_libft/ft_lstnew.c			\
+			standard_libft/ft_lstadd_front.c			\
+			standard_libft/ft_lstsize.c					\
+			standard_libft/ft_lstlast.c					\
+			standard_libft/ft_lstadd_back.c				\
+			standard_libft/ft_lstdelone.c				\
+			standard_libft/ft_lstclear.c				\
+			standard_libft/ft_lstiter.c					\
+			standard_libft/ft_lstmap.c
 
 OBJS 		= $(SRCS:.c=.o)
 
 BONUS_OBJS 	= $(BONUS_SRCS:.c=.o)
 
-all:		${NAME}
+all:		$(NAME)
 
-${NAME}: 	${OBJS}
-		@echo "\n$(NAME): $(GREEN)$(NAME) was created$(RESET)"
-		ar -rcs ${NAME} ${OBJS}
+$(NAME): 	$(OBJS)
+			@ar -rcs $(NAME) $(OBJS) $(INCLUDE)
+			@echo "$(GREY)Libft: $(GREEN)$(NAME) was created$(RESET)"
 
-bonus:		${NAME} ${BONUS_OBJS}
-		@echo "\n$(NAME): $(GREEN)$(NAME) was created with Bonus$(RESET)"
-		ar -rcs ${NAME} ${BONUS_OBJS}
-		@echo
+bonus:		$(NAME) $(BONUS_OBJS)
+			@ar -rcs $(NAME) $(BONUS_OBJS) $(INCLUDE)
+			@echo "$(GREY)Libft: $(GREEN)$(NAME) was created with Bonus$(RESET)"
 
 .c.o:
-		@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
-		${CC} ${FLAGS} -c $< -o ${<:.c=.o}
+			@$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
 
 clean:
-		@echo "\n$(NAME): $(RED)object files were deleted$(RESET)"
-		${REMOVE} ${OBJS} ${BONUS_OBJS}
-		@echo
+			@$(REMOVE) $(OBJS) $(BONUS_OBJS)
+			@echo "$(GREY)Libft: object files were deleted$(RESET)"
 
 fclean:		clean
-		@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
-		${REMOVE} ${NAME}
-		@echo
+			@$(REMOVE) $(NAME)
+			@echo "$(GREY)Libft: $(NAME) was deleted$(RESET)"
+
+re:			fclean $(NAME)
 
 rebonus:	fclean bonus
 
